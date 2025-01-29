@@ -1,5 +1,3 @@
-import React from "react"
-
 const AboutUs = () => {
   return (
     <div className="flex flex-col justify-center gap-4 text-justify p-4">
@@ -17,12 +15,17 @@ const AboutUs = () => {
       </p>
       <p>
         At BudgetEase Solutions, our mission is to make budgeting effortless and
-        accessible for everyone. Whether you're a small business owner, a busy
+        accessible for everyone. Whether you are a small business owner, a busy
         professional, or an individual looking to manage your personal finances,
         we offer tailored solutions to streamline your budgeting process.
       </p>
-      {/* <p>                Our team of experts is dedicated to providing exceptional service and support, guiding you every step of the way to financial success. With BudgetEase Solutions, you can trust us to simplify your finances and pave the way for a brighter financial future.
-            </p> */}
+      <p>
+        {" "}
+        Our team of experts is dedicated to providing exceptional service and
+        support, guiding you every step of the way to financial success. With
+        BudgetEase Solutions, you can trust us to simplify your finances and
+        pave the way for a brighter financial future.
+      </p>
     </div>
   )
 }
