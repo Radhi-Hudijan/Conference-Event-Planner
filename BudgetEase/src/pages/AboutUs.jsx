@@ -1,6 +1,6 @@
 const AboutUs = () => {
   return (
-    <div className="flex flex-col justify-center gap-4 text-justify p-4">
+    <div className="flex flex-col justify-center gap-4 text-justify p-5">
       <p>
         Welcome to BudgetEase Solutions, your trusted partner in simplifying
         budget management and financial solutions. At BudgetEase, we understand
