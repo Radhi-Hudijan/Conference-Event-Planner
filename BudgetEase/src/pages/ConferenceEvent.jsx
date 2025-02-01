@@ -6,6 +6,11 @@ function ConferenceEvent() {
   const venueItems = useSelector((state) => state.venue)
   const dispatch = useDispatch()
 
+  // calculate venue total cost
+  const totalCost = venueItems.reduce((acc, item) => {
+    return acc + item.cost * item.quantity
+  }, 0)
+
   return (
     <>
       <nav className="flex flex-col sm:flex-row justify-between items-center h-auto  bg-[#123B6A] p-5 gap-5">
@@ -81,7 +86,9 @@ function ConferenceEvent() {
               </div>
             ))}
           </div>
-          <div>Total cost : </div>
+          <div className="font-bold text-2xl bg-amber-100 p-4 rounded">
+            Total Cost :$ {totalCost}{" "}
+          </div>
         </div>
       </div>
     </>
